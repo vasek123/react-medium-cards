@@ -1,0 +1,24 @@
+@import '../assets/colors.scss';
+
+.bookmark {
+  display: inline-block;
+  margin-left: 12px;
+  input[type="checkbox"] {
+    display: none;
+    + label {
+      cursor: pointer;
+      vertical-align: middle;
+      font-size: 20px;
+      color: $gray;
+      &:hover {
+        color: $gray-hover;
+      }
+    }
+    &:checked {
+      + label {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}

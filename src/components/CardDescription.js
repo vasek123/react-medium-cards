@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './CardDescription.scss';
+
 function CardDescription(props) {
   return (
-    <div className="card-description">
+    <div className="description">
       <p>{props.article.description}</p>
-      <a href="#">Read more...</a>
+      <span className="read-more">Read more...</span>
     </div>
   );
 }

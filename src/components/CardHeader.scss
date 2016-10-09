@@ -1,0 +1,12 @@
+@import '../assets/mixins.scss';
+@import '../assets/colors.scss';
+
+.card {
+  .header {
+    h1 {
+      font-family: 'Source Sans Pro', sans;
+      color: $black;
+      margin: 0;
+    }
+  }
+}

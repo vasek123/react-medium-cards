@@ -1,0 +1,22 @@
+@import '../assets/colors.scss';
+
+.options {
+  float: right;
+  display: inline-block;
+  .responses {
+    color: $gray;
+    cursor: pointer;
+    &:hover {
+      color: $gray-light-hover;
+    }
+  }
+  .dropdown {
+    cursor: pointer;
+    margin-left: 12px;
+    vertical-align: middle;
+    color: $gray;
+    &:hover {
+      color: $gray-hover;
+    }
+  }
+}

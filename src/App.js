@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Card from './components/Card';
-import './App.css';
-import articles from './res/articles';
+
+import articles from './assets/articles';
+import './App.scss';
+import './index.scss';
 
 class App extends Component {
   renderCard(article, key) {

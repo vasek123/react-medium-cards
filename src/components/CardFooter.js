@@ -2,9 +2,11 @@ import React from 'react';
 import Like from './Like';
 import Options from './Options';
 
+import './CardFooter.scss';
+
 function CardFooter(props) {
   return (
-    <div className="card-footer">
+    <div className="footer">
       <Like article={props.article} liked={props.liked} handleLike={props.handleLike} />
       <Options article={props.article} bookmarked={props.bookmarked} handleBookmark={props.handleBookmark} />
     </div>

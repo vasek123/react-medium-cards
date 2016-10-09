@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './Bookmark.scss';
+
 function Bookmark(props) {
   return (
-    <div className="card-bookmark">
-      <input type="checkbox" className="bookmark" value={props.bookmarked} onChange={props.handleBookmark}/>
-      <label></label>
+    <div className="bookmark" onClick={props.handleBookmark}>
+      <input type="checkbox" checked={props.bookmarked} />
+      <label>{props.bookmarked ? <i className="fa fa-bookmark" aria-hidden="true"></i> : <i className="fa fa-bookmark-o" aria-hidden="true"></i>}</label>
     </div>
   )
 }

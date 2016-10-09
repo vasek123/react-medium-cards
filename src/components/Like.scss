@@ -1,0 +1,26 @@
+@import '../assets/colors.scss';
+
+.like {
+  display: inline-block;
+  cursor: pointer;
+  input[type="checkbox"] {
+    display: none;
+    + label {
+      position: relative;
+      cursor: pointer;
+      font-weight: 200;
+      vertical-align: middle;
+      margin-right: 10px;
+      font-size: 20px;
+      color: $green;
+      display: inline-block;
+      &:hover {
+        color: $green-hover;
+      }
+    }
+  }
+  .count {
+    font-size: 14px;
+    color: $gray;
+  }
+}

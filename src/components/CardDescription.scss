@@ -1,0 +1,28 @@
+@import '../assets/colors.scss';
+
+.card {
+  .description {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $black;
+    cursor: pointer;
+    font-family: 'Source Serif Pro', serif;
+    p {
+      margin: 0;
+    }
+    span {
+      &.read-more {
+        font-family: 'Source Sans Pro', sans;
+        font-size: 14px;
+        color: $gray;
+        cursor: pointer;
+        line-height: 1.6;
+        margin-top: 20px !important;
+        &:hover {
+          color: $gray-light-hover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../assets/mixins.scss';
+
+img {
+  &.author-image {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    @include circle(36px, rgba(0, 0, 0, 0));
+  }
+}

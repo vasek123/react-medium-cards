@@ -4,6 +4,8 @@ import CardImage from './CardImage';
 import CardDescription from './CardDescription';
 import CardFooter from './CardFooter';
 
+import './Card.scss';
+
 class Card extends Component {
   constructor(props) {
     super(props);

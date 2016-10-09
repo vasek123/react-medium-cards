@@ -1,11 +1,13 @@
 import React from 'react';
 
+import './Like.scss';
+
 function Like(props) {
   return (
-    <div className="card-like">
-      <input type="checkbox" className="like" value={props.liked} onChange={props.handleLike}/>
-      <label></label>
-      <span className="like-count">{props.article.likesCount + (props.liked ? 1 : 0)}</span>
+    <div className="like" onClick={props.handleLike}>
+      <input type="checkbox" checked={props.liked} />
+      <label>{props.liked ? <i className="fa fa-heart" aria-hidden="true"></i> : <i className="fa fa-heart-o" aria-hidden="true"></i>}</label>
+      <span className="count">{props.article.likesCount + (props.liked ? 1 : 0)}</span>
     </div>
   );
 }

@@ -1,12 +1,14 @@
 import React from 'react';
 import Bookmark from './Bookmark';
 
+import './Options.scss';
+
 function Options(props) {
   return (
-    <div className="card-options">
+    <div className="options">
       <span className="responses">{props.article.responsesCount} response(s)</span>
       <Bookmark bookmarked={props.bookmarked} handleBookmark={props.handleBookmark} />
-      <span className="dropdown"></span>
+      <span className="dropdown"><i className="fa fa-chevron-down" aria-hidden="true"></i></span>
     </div>
   )
 }

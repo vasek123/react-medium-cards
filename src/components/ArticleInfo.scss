@@ -1,0 +1,40 @@
+@import '../assets/mixins.scss';
+@import '../assets/colors.scss';
+
+.card {
+  .article-info {
+    margin-bottom: 10px;
+    .info {
+      color: $gray;
+      font-size: 12px;
+      line-height: 1.4;
+
+      .author-info {
+        display: block;
+      }
+    }
+
+    span {
+      &.author {
+        font-size: 14px;
+        color: $green;
+        cursor: pointer;
+        &:hover {
+          color: $green-hover;
+        }
+      }
+      &.publication-date {
+        color: $gray;
+        cursor: pointer;
+        &:hover {
+          color: $gray-light-hover;
+        }
+      }
+      &.dot:after {
+        content: '·';
+        margin-left: .45em;
+        margin-right: .45em;
+      }
+    }
+  }
+}

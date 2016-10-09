@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './AuthorImage.scss';
+
 function AuthorImage(props) {
   return (
-    <img src={props.author.image} alt={props.author.name} />
+    <img className="author-image" src={props.author.image} alt={props.author.name} />
   );
 }
 

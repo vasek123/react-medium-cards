@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './CardImage.scss';
+
 function CardImage(props) {
   return (
-    <img className="card-image" src={props.article.image} alt={props.article.title} />
+    <img className="image" src={props.article.image} alt={props.article.title} />
   );
 }
 
